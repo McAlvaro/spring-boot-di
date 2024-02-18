@@ -1,12 +1,17 @@
 package com.mcalvaro.springbootdi.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.mcalvaro.springbootdi.services.IService;
+
 @Controller
 public class IndexController {
 
+    @Autowired
+    private IService service;
 
     @GetMapping({ "/", "" })
     public String index(Model model) {
