@@ -1,5 +1,6 @@
 package com.mcalvaro.springbootdi.controllers;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +12,7 @@ public class IndexController {
 
     private IService service;
 
-    public IndexController(IService service) {
+    public IndexController( @Qualifier("MySimpleService") IService service) {
 
         this.service = service;
     }
