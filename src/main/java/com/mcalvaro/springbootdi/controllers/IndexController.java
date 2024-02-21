@@ -12,7 +12,7 @@ public class IndexController {
 
     private IService service;
 
-    public IndexController( @Qualifier("MySimpleService") IService service) {
+    public IndexController( /**@Qualifier("MySimpleService")**/ IService service) {
 
         this.service = service;
     }

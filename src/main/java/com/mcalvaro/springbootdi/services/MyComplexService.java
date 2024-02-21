@@ -3,8 +3,8 @@ package com.mcalvaro.springbootdi.services;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("MyComplexService")
-@Primary
+// @Component("MyComplexService")
+// @Primary
 public class MyComplexService implements IService {
 
 	@Override

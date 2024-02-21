@@ -2,7 +2,7 @@ package com.mcalvaro.springbootdi.services;
 
 import org.springframework.stereotype.Component;
 
-@Component("MySimpleService")
+// @Component("MySimpleService")
 public class MySimpleService implements IService {
 
     @Override
