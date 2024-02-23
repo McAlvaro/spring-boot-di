@@ -26,4 +26,9 @@ public class ItemInvoice {
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
+
+    public Integer calculateImport() {
+
+        return quantity * product.getPrice();
+    } 
 }
